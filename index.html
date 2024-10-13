@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -17,35 +18,38 @@
 <body>
 
 <style type="text/css">
-  body{font-family: Arial, sans-serif}
+  body{font-family: Arial, sans-serif; margin: 0;}
   body *{margin: 0; padding: 0}
 
-  header{display: flex; align-items: flex-end; min-width: 100%}
+  header{display: flex; justify-content: center; min-width: 100%}
   section{width: 33%}
 
   main{text-align: center; max-width: 700px; margin: auto;}
   h2{color: red; font-weight: bold; font-size: 21px}
   p{font-size: 16px;}
 
-  #wip{color: blue; -webkit-text-stroke: 1.5px blue; text-stroke: 1.5px blue; text-align: center; font-size: 26px}
-  #logo{width: 50%;}
-  .side{width: 25%; padding: 20px; font-size: 26px; letter-spacing: -.07em; transform: scale(1, 1.2); line-height: 1}
-
+  #logo{width: 30%;}
+  #vvflogo{width: 40%;}
+  .side{width: 100%; padding: 0 10px; font-size: 26px; line-height: 1; text-align: center;}
   @media (max-width: 900px) {
-    header{display: block}
-    #logo{width: 100%; padding-bottom: 30px}
+    body{padding: 0 20px;}
+    #logo{width: 100%; padding-bottom: 10px}
+    #vvflogo{width: 100%; padding-bottom: 30px}
     .side{width: 100%; text-align: center; padding: 0}
   }
 </style>
 
-<h2 id="wip">SITO IN COSTRUZIONE</h2>
-<br>
+<header>
+  <section id="logo"><img src="assets/logo.svg"></section>
+</header>
 
 <header>
-  <section class="side">Zona artigianale Pera<br>Strada di Ramones, 5<br>San Giovanni di Fassa, (TN) Italia<br><br></section>
-  <section id="logo"><img src="assets/logo.svg"></section>
-  <section class="side">Tel: 0462 764466<br>W: 373 7980933<br>Email: info@aaveste.it<br><br></section>
+    <section id="vvflogo"><img src="assets/vvf_trentino.svg"></section>
 </header>
+
+<p class="side">Zona artigianale Pera Strada di Ramons, 5 San Giovanni di Fassa, (TN)</p>
+<br>
+<p class="side">Tel: 0462 764466 W: 373 7980933 Email: info@aaveste.it info@vvftrentino.it</p>
 
 
 
